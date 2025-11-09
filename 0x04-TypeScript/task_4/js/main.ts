@@ -2,32 +2,33 @@
 /// <reference path="./subjects/Java.ts" />
 /// <reference path="./subjects/React.ts" />
 
-// Create one Teacher object
-const cTeacher: Subjects.Teacher = {
-    firstName: 'Guillaume',
-    lastName: 'Salva',
-    experienceTeachingC: 10
-  };
+namespace Subjects {
+    export const cTeacher: Teacher = {
+      firstName: 'Guillaume',
+      lastName: 'Salva',
+      experienceTeachingC: 10
+    };
   
-  const cpp = new Subjects.Cpp();
-  const java = new Subjects.Java();
-  const react = new Subjects.React();
+    export const cpp = new Cpp();
+    export const java = new Subjects.Java();
+    export const react = new React();
+  }
   
-  // ---- C++ ----
+  // ---- Cpp ----
   console.log('C++');
-  cpp.setTeacher(cTeacher);
-  console.log(cpp.getRequirements());
-  console.log(cpp.getAvailableTeacher());
+  Subjects.cpp.setTeacher(Subjects.cTeacher);
+  console.log(Subjects.cpp.getRequirements());
+  console.log(Subjects.cpp.getAvailableTeacher());
   
   // ---- Java ----
   console.log('Java');
-  java.setTeacher(cTeacher);              
-  console.log(java.getRequirements());    
-  console.log(java.getAvailableTeacher());
+  Subjects.java.setTeacher(Subjects.cTeacher);
+  console.log(Subjects.java.getRequirements());
+  console.log(Subjects.java.getAvailableTeacher());
   
   // ---- React ----
   console.log('React');
-  react.setTeacher(cTeacher);
-  console.log(react.getRequirements());
-  console.log(react.getAvailableTeacher());
+  Subjects.react.setTeacher(Subjects.cTeacher);
+  console.log(Subjects.react.getRequirements());
+  console.log(Subjects.react.getAvailableTeacher());
   
