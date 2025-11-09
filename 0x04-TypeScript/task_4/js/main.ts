@@ -10,9 +10,16 @@ namespace Subjects {
     };
   
     export const cpp = new Cpp();
-    export const java = new Subjects.Java();
+    export const java = new Java();
     export const react = new React();
-  }
+
+
+    // ---- Java ----
+    console.log('Java');
+    java.setTeacher(cTeacher);
+    console.log(java.getRequirements());
+    console.log(java.getAvailableTeacher()); 
+}
   
   // ---- Cpp ----
   console.log('C++');
@@ -20,11 +27,7 @@ namespace Subjects {
   console.log(Subjects.cpp.getRequirements());
   console.log(Subjects.cpp.getAvailableTeacher());
   
-  // ---- Java ----
-  console.log('Java');
-  Subjects.java.setTeacher(Subjects.cTeacher);
-  console.log(Subjects.java.getRequirements());
-  console.log(Subjects.java.getAvailableTeacher());
+
   
   // ---- React ----
   console.log('React');
