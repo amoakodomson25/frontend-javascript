@@ -13,25 +13,25 @@ namespace Subjects {
     export const java = new Java();
     export const react = new React();
 
+    // ---- C++ ----
+console.log('C++');
+cpp.setTeacher(cTeacher);
+console.log(cpp.getRequirements());
+console.log(cpp.getAvailableTeacher());
+
 
     // ---- Java ----
     console.log('Java');
     java.setTeacher(cTeacher);
     console.log(java.getRequirements());
     console.log(java.getAvailableTeacher()); 
+
+    // ---- React ----
+console.log('React');
+react.setTeacher(cTeacher);
+console.log(react.getRequirements());
+console.log(react.getAvailableTeacher());
 }
   
-  // ---- Cpp ----
-  console.log('C++');
-  Subjects.cpp.setTeacher(Subjects.cTeacher);
-  console.log(Subjects.cpp.getRequirements());
-  console.log(Subjects.cpp.getAvailableTeacher());
-  
 
-  
-  // ---- React ----
-  console.log('React');
-  Subjects.react.setTeacher(Subjects.cTeacher);
-  console.log(Subjects.react.getRequirements());
-  console.log(Subjects.react.getAvailableTeacher());
   
